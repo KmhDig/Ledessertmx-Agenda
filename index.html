@@ -1512,7 +1512,7 @@ Notas adicionales:</textarea>
                 </div>
 
                 <!-- 7. BLOQUEAR FECHAS -->
-                <div class="admin-section-card space-y-4">
+               <div class="admin-section-card space-y-4">
                     <div class="flex items-center gap-2.5 border-b border-stone-100 pb-3">
                         <span class="w-8 h-8 rounded-xl bg-rose-50 text-rose-600 flex items-center justify-center text-sm">
                             <i class="fa-solid fa-calendar-xmark"></i>
@@ -1522,8 +1522,9 @@ Notas adicionales:</textarea>
                     
                     <div class="flex gap-3 flex-wrap">
                         <input type="date" id="blockDateInput" class="input-canva flex-grow min-w-[180px]">
-                            <i class="class="bg-pink-600 hover:bg-pink-700 text-white px-6 py-3 rounded-2xl text-xs font-bold uppercase tracking-widest shadow transition flex items-center gap-1.5"></i> BLOQUEAR</button>
-                      
+                        <button onclick="blockSpecificDate()" class="bg-brand-500 text-white px-6 py-3 rounded-2xl text-xs font-bold uppercase tracking-widest shadow hover:bg-brand-600 transition flex items-center gap-1.5">
+                            <i class="fa-solid fa-ban"></i> BLOQUEAR
+                        </button>
                         <button onclick="removePastBlockedDates()" class="bg-rose-50 hover:bg-rose-100 text-rose-700 px-5 py-3 rounded-2xl text-xs font-bold uppercase tracking-wider transition flex items-center gap-1.5 border border-rose-200" title="Eliminar de la lista las fechas bloqueadas anteriores a hoy">
                             <i class="fa-solid fa-calendar-minus"></i> BORRAR FECHAS PASADAS
                         </button>
