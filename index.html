@@ -311,7 +311,7 @@ main { max-width: 1380px !important; }
         .hero-button:hover { transform: translateY(-2px); }
         .hero-button:focus-visible { outline: 3px solid #fff; outline-offset: 4px; }
         .hero-button-primary { background: var(--brand-main, #6a95a4); color: #fff; border: 1px solid var(--brand-main, #6a95a4); }
-        .hero-button-primary:hover { background: #B8D4D9; border-color: #B8D4D9; }
+        .hero-button-primary:hover { background: var(--brand-secondary, #B8D4D9); border-color: var(--brand-secondary, #B8D4D9); }
         .hero-button-secondary { background: rgba(255,255,255,.12); color: #fff; border: 1px solid rgba(255,255,255,.8); backdrop-filter: blur(8px); }
         .hero-button-secondary:hover { background: rgba(255,255,255,.23); }
         /* Portada con mayor presencia, manteniendo la identidad de Dulce Reino */
@@ -491,7 +491,7 @@ main { max-width: 1380px !important; }
     <style>
         :root {
             --brand-main: #6a95a4;
-            --brand-secondary: #896157;
+            --brand-secondary: #B8D4D9;
             --brand-dark: #2d494c;
             --brand-light: #f0f7f7;
             --brand-lighter: #dbecec;
@@ -502,7 +502,7 @@ main { max-width: 1380px !important; }
         body {
             font-family: 'Plus Jakarta Sans', sans-serif;
             background-color: var(--bg-light);
-            color: #896157;
+            color: #57504d;
         }
         .font-serif {
             font-family: 'Playfair Display', serif;
@@ -520,8 +520,8 @@ main { max-width: 1380px !important; }
         }
         .input-canva:focus {
             outline: none;
-            border-color: #569b9e;
-            box-shadow: 0 0 0 3px rgba(86, 155, 158, 0.15);
+            border-color: var(--brand-focus, #569b9e);
+            box-shadow: 0 0 0 3px color-mix(in srgb, var(--brand-focus, #569b9e) 15%, transparent);
             background-color: #ffffff;
         }
         .admin-section-card {
@@ -807,7 +807,7 @@ main { max-width: 1380px !important; }
     <!-- Header Elegante Estilo Canva -->
     <header class="w-full bg-white/95 backdrop-blur-md border-b border-stone-100 py-3.5 px-4 md:px-10 flex justify-between items-center sticky top-0 z-40">
         <div class="flex items-center gap-3">
-            <div class="w-12 h-12 rounded-full border border-[#6a95a4] p-0.5 overflow-hidden flex-shrink-0 bg-white">
+            <div class="w-12 h-12 rounded-full border border-[var(--brand-main)] p-0.5 overflow-hidden flex-shrink-0 bg-white">
                <img id="business-logo" src="img/logo.png" alt="Logo" class="w-full h-full rounded-full object-cover">
             </div>
             <div>
@@ -986,16 +986,16 @@ background-repeat:no-repeat;">
             </div>
 
             <!-- AVISOS Y CALENDARIO DE DISPONIBILIDAD -->
-            <div class="rounded-2xl border border-[#B8D4D9] bg-[#F0F7F7] p-4 md:p-5">
+            <div class="rounded-2xl border border-[var(--brand-secondary)] bg-[var(--brand-light)] p-4 md:p-5">
     <div class="flex items-start gap-3">
-        <div class="w-9 h-9 rounded-xl bg-white text-[#6A95A4] border border-[#B8D4D9] flex items-center justify-center shrink-0">
+        <div class="w-9 h-9 rounded-xl bg-white text-[var(--brand-main)] border border-[var(--brand-secondary)] flex items-center justify-center shrink-0">
             <i class="fa-solid fa-calendar-check"></i>
         </div>
         <div>
-            <h4 class="font-bold text-[#2D494C] text-xs tracking-wider mb-1">
+            <h4 class="font-bold text-[var(--brand-dark)] text-xs tracking-wider mb-1">
                 ANTES DE COMENZAR
             </h4>
-            <p class="text-xs leading-relaxed text-[#52676B]">
+            <p class="text-xs leading-relaxed text-stone-600">
                 Primero revisa el calendario y selecciona una fecha disponible. Después completa tu pedido.
             </p>
         </div>
@@ -1056,16 +1056,16 @@ background-repeat:no-repeat;">
                 </div>
             </section>
 
-          <div class="rounded-2xl border border-[#B8D4D9] bg-[#F0F7F7] p-4 md:p-5 mb-6">
+          <div class="rounded-2xl border border-[var(--brand-secondary)] bg-[var(--brand-light)] p-4 md:p-5 mb-6">
     <div class="flex items-start gap-3">
-        <div class="w-9 h-9 rounded-xl bg-white text-[#6A95A4] border border-[#B8D4D9] flex items-center justify-center shrink-0">
+        <div class="w-9 h-9 rounded-xl bg-white text-[var(--brand-main)] border border-[var(--brand-secondary)] flex items-center justify-center shrink-0">
             <i class="fa-solid fa-calendar-check"></i>
         </div>
         <div>
-            <h4 class="font-bold text-[#2D494C] text-sm mb-1">
+            <h4 class="font-bold text-[var(--brand-dark)] text-sm mb-1">
                 ¡Recuerda revisar la disponibilidad antes de elegir tu fecha!
             </h4>
-            <p class="text-xs leading-relaxed text-[#52676B]">
+            <p class="text-xs leading-relaxed text-stone-600">
                 Las fechas en verde están disponibles. La agenda llena no admite nuevos pedidos.
             </p>
         </div>
@@ -1075,7 +1075,7 @@ background-repeat:no-repeat;">
             <form id="orderForm" onsubmit="handleReviewOrder(event)" class="space-y-6">
               
 <div id="orderFormClosedNotice"
-     class="hidden rounded-xl border border-[#B8D4D9] bg-[#F0F7F7] px-3 py-2 text-xs font-semibold text-[#2D494C]"
+     class="hidden rounded-xl border border-[var(--brand-secondary)] bg-[var(--brand-light)] px-3 py-2 text-xs font-semibold text-[var(--brand-dark)]"
      role="status"
      aria-live="polite"></div>
                 <div class="space-y-3">
@@ -1216,7 +1216,7 @@ Notas adicionales:</textarea>
                     <textarea id="otherObservations" rows="5" placeholder="¿Hay algo más que debamos saber?" class="w-full input-canva"></textarea>
                 </div>
 
-                <div class="flex items-start gap-3 rounded-2xl border border-[#B8D4D9] bg-[#F0F7F7] p-4 text-[#2D494C]">
+                <div class="flex items-start gap-3 rounded-2xl border border-[var(--brand-secondary)] bg-[var(--brand-light)] p-4 text-[var(--brand-dark)]">
     <i class="fa-solid fa-circle-info mt-0.5 text-[#6A95A4]"></i>
     <p class="text-xs leading-relaxed">
         <strong class="font-bold">Aviso y recordatorio:</strong>
@@ -1351,7 +1351,7 @@ Notas adicionales:</textarea>
                 <style>
                     .admin-category-tab { background:#f5f5f4; color:#78716c; border:1px solid #e7e5e4; }
                     .admin-category-tab:hover { background:#ede9e5; color:#57534e; }
-                    .admin-category-tab.active { background:#5397A6; color:#fff; border-color:#5397A6; box-shadow:0 2px 8px rgba(0,0,0,.08); }
+                    .admin-category-tab.active { background:var(--brand-main, #6a95a4); color:#fff; border-color:var(--brand-main, #6a95a4); box-shadow:0 2px 8px rgba(0,0,0,.08); }
                     .admin-category-panel { display:none; }
                     .admin-category-panel.active { display:block; }
                 
