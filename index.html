@@ -117,20 +117,139 @@ main { max-width: 1380px !important; }
 
 
 <style id="public-order-schedule-compact">
-#publicOrderSchedule{display:flex;align-items:flex-start;gap:12px;padding:16px 18px;margin:0 0 12px;border:1px solid #f2dfe2;border-radius:18px;background:linear-gradient(135deg,#fff4f6,#fff);color:#292524}
-#publicOrderSchedule .public-schedule-icon{flex:0 0 42px;width:42px;height:42px;border-radius:14px;border:1px solid #fecdd3;background:#fff;display:flex;align-items:center;justify-content:center;color:#cf334c}
-#publicOrderSchedule .public-schedule-main{flex:1;min-width:0}
-#publicOrderSchedule .public-schedule-eyebrow{font-size:10px;letter-spacing:.14em;font-weight:800;color:#cf334c;margin:1px 0 4px}
-#publicOrderSchedule h4{font-size:clamp(15px,1.6vw,19px);font-weight:800;line-height:1.25;margin:0 0 4px;color:#211c1c}
-#publicOrderSchedule p{font-size:12px;line-height:1.45;margin:0;color:#6b625f}
-#publicOrderSchedule .public-schedule-meta{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:10px;max-width:620px}
-#publicOrderSchedule .public-schedule-meta>div{min-width:0;padding:9px 11px;border:1px solid #f0e2e3;border-radius:13px;background:rgba(255,255,255,.85)}
-#publicOrderSchedule .public-schedule-meta span{display:block;font-size:9px;letter-spacing:.04em;font-weight:800;color:#a49a98;margin-bottom:3px}
-#publicOrderSchedule .public-schedule-meta strong{display:block;font-size:11px;line-height:1.35;color:#292524;overflow-wrap:anywhere}
-#publicOrderSchedule.is-closed{background:#faf8f7;border-color:#e7e1df}
-#publicOrderSchedule.is-closed .public-schedule-icon{color:#78716c;border-color:#e7e1df}
-#publicOrderSchedule.is-closed .public-schedule-eyebrow{color:#78716c}   
-@media(max-width:640px){#publicOrderSchedule{padding:12px;gap:9px;border-radius:14px;margin-bottom:9px}#publicOrderSchedule .public-schedule-icon{width:34px;height:34px;flex-basis:34px;border-radius:11px}#publicOrderSchedule .public-schedule-meta{grid-template-columns:1fr;gap:6px;margin-top:8px}#publicOrderSchedule .public-schedule-meta>div{padding:8px 9px}#publicOrderSchedule .public-schedule-meta span{font-size:8px}#publicOrderSchedule .public-schedule-meta strong{font-size:10px}}
+#publicOrderSchedule{
+    display:flex;
+    align-items:flex-start;
+    gap:12px;
+    padding:16px 18px;
+    margin:0 0 12px;
+    border:1px solid #D5E6E7;
+    border-radius:18px;
+    background:linear-gradient(135deg,#F0F7F7,#F8FAF9);
+    color:#2D494C;
+}
+
+#publicOrderSchedule .public-schedule-icon{
+    flex:0 0 42px;
+    width:42px;
+    height:42px;
+    border-radius:14px;
+    border:1px solid #D5E6E7;
+    background:#FFFFFF;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#6A95A4;
+}
+
+#publicOrderSchedule .public-schedule-main{
+    flex:1;
+    min-width:0;
+}
+
+#publicOrderSchedule .public-schedule-eyebrow{
+    font-size:10px;
+    letter-spacing:.14em;
+    font-weight:800;
+    color:#6A95A4;
+    margin:1px 0 4px;
+}
+
+#publicOrderSchedule h4{
+    font-size:clamp(15px,1.6vw,19px);
+    font-weight:800;
+    line-height:1.25;
+    margin:0 0 4px;
+    color:#2D494C;
+}
+
+#publicOrderSchedule p{
+    font-size:12px;
+    line-height:1.45;
+    margin:0;
+    color:#647B7E;
+}
+
+#publicOrderSchedule .public-schedule-meta{
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:8px;
+    margin-top:10px;
+    max-width:620px;
+}
+
+#publicOrderSchedule .public-schedule-meta>div{
+    min-width:0;
+    padding:9px 11px;
+    border:1px solid #DCE9E9;
+    border-radius:13px;
+    background:#FFFFFF;
+}
+
+#publicOrderSchedule .public-schedule-meta span{
+    display:block;
+    font-size:9px;
+    letter-spacing:.04em;
+    font-weight:800;
+    color:#6A95A4;
+    margin-bottom:3px;
+}
+
+#publicOrderSchedule .public-schedule-meta strong{
+    display:block;
+    font-size:11px;
+    line-height:1.35;
+    color:#2D494C;
+    overflow-wrap:anywhere;
+}
+
+#publicOrderSchedule.is-closed{
+    background:linear-gradient(135deg,#F0F7F7,#F8FAF9);
+    border-color:#D5E6E7;
+}
+
+#publicOrderSchedule.is-closed .public-schedule-icon{
+    color:#6A95A4;
+    border-color:#D5E6E7;
+}
+
+#publicOrderSchedule.is-closed .public-schedule-eyebrow{
+    color:#6A95A4;
+}
+
+@media(max-width:640px){
+    #publicOrderSchedule{
+        padding:12px;
+        gap:9px;
+        border-radius:14px;
+        margin-bottom:9px;
+    }
+
+    #publicOrderSchedule .public-schedule-icon{
+        width:34px;
+        height:34px;
+        flex-basis:34px;
+        border-radius:11px;
+    }
+
+    #publicOrderSchedule .public-schedule-meta{
+        grid-template-columns:1fr;
+        gap:6px;
+        margin-top:8px;
+    }
+
+    #publicOrderSchedule .public-schedule-meta>div{
+        padding:8px 9px;
+    }
+
+    #publicOrderSchedule .public-schedule-meta span{
+        font-size:8px;
+    }
+
+    #publicOrderSchedule .public-schedule-meta strong{
+        font-size:10px;
+    }
+}
 </style>
 
 <!-- v5: compatible con Apps Script optimizado para guardar configuración en bloque -->
